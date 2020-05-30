@@ -1,0 +1,432 @@
+[REST-SERVER - 111111 - 29-04-2020 15:24:41] com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+java.sql.DriverManager.getConnection(DriverManager.java:664)
+java.sql.DriverManager.getConnection(DriverManager.java:247)
+com.socket.App.main(App.java:101)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+java.lang.Thread.run(Thread.java:748)
+
+[REST-SERVER - 111111 - 29-04-2020 15:25:14] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 15:25:14] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 15:25:14] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"300000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"300000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Parse Request Message Pcode=[300000]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] ***** Doing Balance Inquiry *****
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Getting Data Rekening RowID=[1] AccNo=[1780000001] CIF=[170719950001] Name=[RICKY TRI UTOMO] Saldo Min=[50000] Saldo Awal=[1000000] Saldo Tersedia=[1500000] KodeCab=[178] Jenis Rekening=[Tabungan Plus] Status=[0]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Sending Response to Client Data=[395][{"MBANKRsp":{"descr":"TRANSAKSI BERHASIL","sTermID":"Android","mti":"0210","currCode":"360","pcode":"300000","accNo":"1780000001","stan":"111333","detailData":{"availableSaldo":"1500000","openSaldo":"1000000","jenisRekening":"Tabungan Plus","name":"RICKY TRI UTOMO","kodeCabang":"178","saldoMin":"50000","noCif":"170719950001","status":"0"},"rCode":"00","rrn":"123456789012","gmt":"0427161032"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:25:21] Client Disconnect
+[REST-SERVER - 111111 - 29-04-2020 15:26:10] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 15:26:27] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 15:26:27] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 15:26:27] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 15:26:28] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 145
+
+{"MBANKRe":{"mti":"0200", "accNo":"1780000002", "pcode":"300000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:26:28] Invalid JSON Request
+[REST-SERVER - 111111 - 29-04-2020 15:26:33] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 145
+
+{"MBANKRe":{"mti":"0200", "accNo":"1780000002", "pcode":"300000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:26:33] Invalid JSON Request
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"300000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"300000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Parse Request Message Pcode=[300000]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] ***** Doing Balance Inquiry *****
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Getting Data Rekening RowID=[1] AccNo=[1780000001] CIF=[170719950001] Name=[RICKY TRI UTOMO] Saldo Min=[50000] Saldo Awal=[1000000] Saldo Tersedia=[1500000] KodeCab=[178] Jenis Rekening=[Tabungan Plus] Status=[0]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Sending Response to Client Data=[395][{"MBANKRsp":{"descr":"TRANSAKSI BERHASIL","sTermID":"Android","mti":"0210","currCode":"360","pcode":"300000","accNo":"1780000001","stan":"111333","detailData":{"availableSaldo":"1500000","openSaldo":"1000000","jenisRekening":"Tabungan Plus","name":"RICKY TRI UTOMO","kodeCabang":"178","saldoMin":"50000","noCif":"170719950001","status":"0"},"rCode":"00","rrn":"123456789012","gmt":"0427161032"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:26:50] Client Disconnect
+[REST-SERVER - 111111 - 29-04-2020 15:50:40] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 15:51:11] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 15:51:11] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 15:51:11] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 15:51:36] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 15:51:44] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 15:51:44] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 15:51:44] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Doing Inquiry Transaction History
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 15:51:46] Getting Data Transaction History Rekening Data=[0] RowID=[1] AccNo=[1780000001] KodeTRX=[39] Amount=[000000100000] STAN=[153200] Time=[153230] Date=[29042020] RRN=[153200153230] NorekTujuan=[1780000002] Rcode=[00]Getting Data Transaction History Rekening Data=[1] RowID=[2] AccNo=[1780000001] KodeTRX=[3940] Amount=[000000100000000000100000] STAN=[153200153300] Time=[153230153330] Date=[2904202029042020] RRN=[153200153230153300153330] NorekTujuan=[17800000021780000002] Rcode=[0000]
+[REST-SERVER - 111111 - 29-04-2020 15:51:57] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 15:53:59] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 15:53:59] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 15:53:59] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 15:54:01] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:54:01] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:54:02] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 15:54:02] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 15:54:02] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 15:54:02] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 15:54:02] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 15:54:02] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 15:54:02] Doing Inquiry Transaction History
+[REST-SERVER - 111111 - 29-04-2020 15:54:02] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 15:54:02] Getting Data Transaction History Rekening Data=[2] RowID=[2] AccNo=[1780000001] KodeTRX=[3940] Amount=[000000100000000000100000] STAN=[153200153300] Time=[153230153330] Date=[2904202029042020] RRN=[153200153230153300153330] NorekTujuan=[17800000021780000002] Rcode=[0000]
+[REST-SERVER - 111111 - 29-04-2020 15:55:16] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 15:55:24] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 15:55:24] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 15:55:24] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 15:55:25] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:55:26] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:55:26] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 15:55:26] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 15:55:26] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 15:55:26] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 15:55:26] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 15:55:26] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 15:55:26] Doing Inquiry Transaction History
+[REST-SERVER - 111111 - 29-04-2020 15:55:26] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 15:55:26] Getting Data Transaction History Rekening AccNo=[1780000001] Data=[{"kodeTrx":"3940","date":"2904202029042020","no":2,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"}]
+[REST-SERVER - 111111 - 29-04-2020 15:57:48] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 15:57:57] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 15:57:57] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 15:57:57] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Doing Inquiry Transaction History
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 15:57:58] Getting Data Transaction History Rekening AccNo=[1780000001] Data=[[{"kodeTrx":"3940","date":"2904202029042020","no":2,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"},{"kodeTrx":"3940","date":"2904202029042020","no":2,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"}]]
+[REST-SERVER - 111111 - 29-04-2020 15:58:10] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 15:59:24] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 15:59:24] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 15:59:25] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Doing Inquiry Transaction History
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 15:59:26] Getting Data Transaction History Rekening AccNo=[1780000001] Data=[[{"kodeTrx":"3940","date":"2904202029042020","no":2,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"},{"kodeTrx":"3940","date":"2904202029042020","no":2,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"}]]
+[REST-SERVER - 111111 - 29-04-2020 16:00:35] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 16:00:59] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 16:00:59] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 16:00:59] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 16:01:01] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:01:01] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:01:01] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 16:01:01] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 16:01:01] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 16:01:01] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 16:01:02] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 16:01:02] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 16:01:02] Doing Inquiry Transaction History
+[REST-SERVER - 111111 - 29-04-2020 16:01:02] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 16:01:02] Getting Data Transaction History Rekening AccNo=[1780000001] Data=[[{"kodeTrx":"3940","date":"2904202029042020","no":2,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"},{"kodeTrx":"3940","date":"2904202029042020","no":2,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"}]]
+[REST-SERVER - 111111 - 29-04-2020 16:01:12] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 16:01:20] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 16:01:20] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 16:01:20] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Doing Inquiry Transaction History
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Getting Data Transaction History Rekening AccNo=[1780000001] Data=[[{"kodeTrx":"3940","date":"2904202029042020","no":0,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"},{"kodeTrx":"3940","date":"2904202029042020","no":0,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"}]]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Sending Response to Client Data=[185][{"MBANKRsp":{"descr":"REKENING TIDAK DITEMUKAN","sTermID":"Android","mti":"0210","currCode":"360","pcode":"330000","stan":"111333","rCode":"76","rrn":"123456789012","gmt":"0427161032"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:01:21] Client Disconnect
+[REST-SERVER - 111111 - 29-04-2020 16:28:11] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 16:28:20] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 16:28:20] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 16:28:20] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] ***** Doing Inquiry Transaction History *****
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] java.lang.NullPointerException
+com.socket.Appsql.getHistoryTransaction(Appsql.java:108)
+com.socket.App.main(App.java:247)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+java.lang.Thread.run(Thread.java:748)
+
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Sending Response to Client Data=[181][{"MBANKRsp":{"descr":"DATA TIDAK DITEMUKAN","sTermID":"Android","mti":"0210","currCode":"360","pcode":"330000","stan":"111333","rCode":"01","rrn":"123456789012","gmt":"0427161032"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:28:21] Client Disconnect
+[REST-SERVER - 111111 - 29-04-2020 16:29:22] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 16:29:30] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 16:29:30] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 16:29:30] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 16:29:31] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:29:32] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:29:32] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 16:29:32] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 16:29:32] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 16:29:32] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 16:29:32] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 16:29:32] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 16:29:32] ***** Doing Inquiry Transaction History *****
+[REST-SERVER - 111111 - 29-04-2020 16:29:32] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 16:29:32] Getting Data Transaction History Rekening AccNo=[1780000001] Data=[[{"kodeTrx":"3940","date":"2904202029042020","no":2,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"},{"kodeTrx":"3940","date":"2904202029042020","no":2,"amount":1.000000000001E17,"accNo":"1780000001","stan":"153200153300","rCode":"0000","time":"153230153330","rrn":"153200153230153300153330"}]]
+[REST-SERVER - 111111 - 29-04-2020 16:37:00] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 16:37:09] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 16:37:09] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 16:37:09] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] ***** Doing Inquiry Transaction History *****
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 16:37:10] Get Data Transaksi AccNo=[1780000001] TXData=[[{"kodeTrx":"39","date":"000000100000","no":1,"amount":"000000100000","stan":"153200","rCode":"00","time":"153230","rrn":"153200153230"},{"kodeTrx":"40","date":"000000100000","no":2,"amount":"000000100000","stan":"153300","rCode":"00","time":"153330","rrn":"153300153330"}]]
+[REST-SERVER - 111111 - 29-04-2020 16:37:51] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] ***** Doing Inquiry Transaction History *****
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 16:38:04] Get Data Transaksi AccNo=[1780000001] TXData=[[{"kodeTrx":"39","date":"29042020","no":1,"amount":"100000","stan":"153200","rCode":"00","time":"153230","rrn":"153200153230"},{"kodeTrx":"40","date":"29042020","no":2,"amount":"100000","stan":"153300","rCode":"00","time":"153330","rrn":"153300153330"}]]
+[REST-SERVER - 111111 - 29-04-2020 16:46:58] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 16:47:07] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 16:47:07] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 16:47:07] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] ***** Doing Inquiry Transaction History *****
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Get Data Transaksi AccNo=[1780000001] TXData=[[{"kodeTrx":"39","date":"29042020","no":1,"amount":"100000","stan":"153200","rCode":"00","time":"153230","rrn":"153200153230"},{"kodeTrx":"40","date":"29042020","no":2,"amount":"100000","stan":"153300","rCode":"00","time":"153330","rrn":"153300153330"}]]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Sending Response to Client Data=[508][{"MBANKRsp":{"descr":"TRANSAKSI BERHASIL","sTermID":"Android","mti":"0210","currCode":"360","pcode":"330000","stan":"111333","detailData":"[{\"kodeTrx\":\"39\",\"date\":\"29042020\",\"no\":1,\"amount\":\"100000\",\"stan\":\"153200\",\"rCode\":\"00\",\"time\":\"153230\",\"rrn\":\"153200153230\"},{\"kodeTrx\":\"40\",\"date\":\"29042020\",\"no\":2,\"amount\":\"100000\",\"stan\":\"153300\",\"rCode\":\"00\",\"time\":\"153330\",\"rrn\":\"153300153330\"}]","rCode":"00","rrn":"123456789012","gmt":"0427161032"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:47:08] Client Disconnect
+[REST-SERVER - 111111 - 29-04-2020 16:48:29] Shutdown detected
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Listen on Port 5555
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] ***** Doing Inquiry Transaction History *****
+[REST-SERVER - 111111 - 29-04-2020 16:48:42] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 16:48:43] Get Data Transaksi AccNo=[1780000001] TXData=[[{"kodeTrx":"39","date":"29042020","no":1,"amount":"100000","stan":"153200","rCode":"00","time":"153230","rrn":"153200153230"},{"kodeTrx":"40","date":"29042020","no":2,"amount":"100000","stan":"153300","rCode":"00","time":"153330","rrn":"153300153330"}]]
+[REST-SERVER - 111111 - 29-04-2020 16:48:43] Sending Response to Client Data=[446][{"MBANKRsp":{"descr":"TRANSAKSI BERHASIL","sTermID":"Android","mti":"0210","currCode":"360","pcode":"330000","stan":"111333","detailData":[{"kodeTrx":"39","date":"29042020","no":1,"amount":"100000","stan":"153200","rCode":"00","time":"153230","rrn":"153200153230"},{"kodeTrx":"40","date":"29042020","no":2,"amount":"100000","stan":"153300","rCode":"00","time":"153330","rrn":"153300153330"}],"rCode":"00","rrn":"123456789012","gmt":"0427161032"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:48:43] Client Disconnect
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"300000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"300000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Parse Request Message Pcode=[300000]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] ***** Doing Balance Inquiry *****
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Getting Data Rekening RowID=[1] AccNo=[1780000001] CIF=[170719950001] Name=[RICKY TRI UTOMO] Saldo Min=[50000] Saldo Awal=[1000000] Saldo Tersedia=[1500000] KodeCab=[178] Jenis Rekening=[Tabungan Plus] Status=[0]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Sending Response to Client Data=[395][{"MBANKRsp":{"descr":"TRANSAKSI BERHASIL","sTermID":"Android","mti":"0210","currCode":"360","pcode":"300000","accNo":"1780000001","stan":"111333","detailData":{"availableSaldo":"1500000","openSaldo":"1000000","jenisRekening":"Tabungan Plus","name":"RICKY TRI UTOMO","kodeCabang":"178","saldoMin":"50000","noCif":"170719950001","status":"0"},"rCode":"00","rrn":"123456789012","gmt":"0427161032"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:53:05] Client Disconnect
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Getting Incoming Client Message=[POST / HTTP/1.1
+Host: localhost:5555
+User-Agent: curl/7.55.1
+Accept: */*
+Content-Type:application/json
+Content-Length: 146
+
+{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Parse Request Message=[146][{"MBANKReq":{"mti":"0200", "accNo":"1780000001", "pcode":"330000", "stan":"111333", "gmt":"0427161032", "rrn":"123456789012", "termId":"Android"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Parse Request Message MTI=[0200]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Parse Request Message Pcode=[330000]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Parse Request Message STAN=[111333]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Parse Request Message GMT=[0427161032]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Parse Request Message RRN=[123456789012]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Parse Request Message TermID=[Android]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] ***** Doing Inquiry Transaction History *****
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Parse Request Message AccNo=[1780000001]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Get Data Transaksi AccNo=[1780000001] TXData=[[{"kodeTrx":"39","date":"29042020","no":1,"amount":"100000","stan":"153200","rCode":"00","time":"153230","rrn":"153200153230"},{"kodeTrx":"40","date":"29042020","no":2,"amount":"100000","stan":"153300","rCode":"00","time":"153330","rrn":"153300153330"}]]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Sending Response to Client Data=[446][{"MBANKRsp":{"descr":"TRANSAKSI BERHASIL","sTermID":"Android","mti":"0210","currCode":"360","pcode":"330000","stan":"111333","detailData":[{"kodeTrx":"39","date":"29042020","no":1,"amount":"100000","stan":"153200","rCode":"00","time":"153230","rrn":"153200153230"},{"kodeTrx":"40","date":"29042020","no":2,"amount":"100000","stan":"153300","rCode":"00","time":"153330","rrn":"153300153330"}],"rCode":"00","rrn":"123456789012","gmt":"0427161032"}}]
+[REST-SERVER - 111111 - 29-04-2020 16:53:09] Client Disconnect
+[REST-SERVER - 111111 - 29-04-2020 16:54:53] Shutdown detected

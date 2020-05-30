@@ -1,0 +1,652 @@
+[REST-SERVER-111111-30/05/2020 19:57:37] Database Connected to [api] User [root] Password [*****]
+[REST-SERVER-111111-30/05/2020 19:57:38] ===== Starting Program REST-SERVER Profile 111111 =====
+[REST-SERVER-111111-30/05/2020 19:57:38] Listen on Port 5555
+[REST-SERVER-111111-30/05/2020 20:00:34] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 202
+
+{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"554646","gmt":"0530130033","rrn":"554646554646","termId":"Android   545d17d4699c869b","userId":"rck177","password":"365d38c60c4e98ca5ca6dbc02d396e53"}}]
+[REST-SERVER-111111-30/05/2020 20:00:34] Parse Request Message=[202][{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"554646","gmt":"0530130033","rrn":"554646554646","termId":"Android   545d17d4699c869b","userId":"rck177","password":"365d38c60c4e98ca5ca6dbc02d396e53"}}]
+[REST-SERVER-111111-30/05/2020 20:00:34] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:00:34] Parse Request Message Pcode=[000000]
+[REST-SERVER-111111-30/05/2020 20:00:34] Parse Request Message STAN=[554646]
+[REST-SERVER-111111-30/05/2020 20:00:34] Parse Request Message GMT=[0530130033]
+[REST-SERVER-111111-30/05/2020 20:00:34] Parse Request Message RRN=[554646554646]
+[REST-SERVER-111111-30/05/2020 20:00:34] Parse Request Message TermID=[Android   545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:00:34] ***** Doing Login User *****
+[REST-SERVER-111111-30/05/2020 20:00:34] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:00:34] Parse Request Message password=[365d38c60c4e98ca5ca6dbc02d396e53]
+[REST-SERVER-111111-30/05/2020 20:00:34] Parse Request Message AndroidID=[545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:00:34] Getting Login User RowID=[1] UserID=[rck177] NoRek=[1780000001] isLogin=[0] AndroidID=[7a34fac07256781a] Invalid Login=[0] Password=[45cb41b32dcfb917ccd8614f1536d6da] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:00:34] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:00:34 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 193
+
+]
+[REST-SERVER-111111-30/05/2020 20:00:34] Sending Response to Client Data=[193][c1
+{"MBANKRsp":{"termId":"Android   545d17d4699c869b","descr":"Password Salah","mti":"0210","currCode":"360","pcode":"000000","stan":"554646","rCode":"55","rrn":"554646554646","gmt":"0530130033"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:00:34] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:00:42] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 202
+
+{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"739070","gmt":"0530130041","rrn":"739070739070","termId":"Android   545d17d4699c869b","userId":"rck177","password":"482c811da5d5b4bc6d497ffa98491e38"}}]
+[REST-SERVER-111111-30/05/2020 20:00:42] Parse Request Message=[202][{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"739070","gmt":"0530130041","rrn":"739070739070","termId":"Android   545d17d4699c869b","userId":"rck177","password":"482c811da5d5b4bc6d497ffa98491e38"}}]
+[REST-SERVER-111111-30/05/2020 20:00:42] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:00:43] Parse Request Message Pcode=[000000]
+[REST-SERVER-111111-30/05/2020 20:00:43] Parse Request Message STAN=[739070]
+[REST-SERVER-111111-30/05/2020 20:00:43] Parse Request Message GMT=[0530130041]
+[REST-SERVER-111111-30/05/2020 20:00:43] Parse Request Message RRN=[739070739070]
+[REST-SERVER-111111-30/05/2020 20:00:43] Parse Request Message TermID=[Android   545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:00:43] ***** Doing Login User *****
+[REST-SERVER-111111-30/05/2020 20:00:43] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:00:43] Parse Request Message password=[482c811da5d5b4bc6d497ffa98491e38]
+[REST-SERVER-111111-30/05/2020 20:00:43] Parse Request Message AndroidID=[545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:00:43] Getting Login User RowID=[1] UserID=[rck177] NoRek=[1780000001] isLogin=[0] AndroidID=[7a34fac07256781a] Invalid Login=[1] Password=[45cb41b32dcfb917ccd8614f1536d6da] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:00:43] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:00:43 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 193
+
+]
+[REST-SERVER-111111-30/05/2020 20:00:43] Sending Response to Client Data=[193][c1
+{"MBANKRsp":{"termId":"Android   545d17d4699c869b","descr":"Password Salah","mti":"0210","currCode":"360","pcode":"000000","stan":"739070","rCode":"55","rrn":"739070739070","gmt":"0530130041"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:00:43] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:00:52] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 202
+
+{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"483084","gmt":"0530130052","rrn":"483084483084","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:00:53] Parse Request Message=[202][{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"483084","gmt":"0530130052","rrn":"483084483084","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:00:53] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:00:53] Parse Request Message Pcode=[000000]
+[REST-SERVER-111111-30/05/2020 20:00:53] Parse Request Message STAN=[483084]
+[REST-SERVER-111111-30/05/2020 20:00:53] Parse Request Message GMT=[0530130052]
+[REST-SERVER-111111-30/05/2020 20:00:53] Parse Request Message RRN=[483084483084]
+[REST-SERVER-111111-30/05/2020 20:00:53] Parse Request Message TermID=[Android   545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:00:53] ***** Doing Login User *****
+[REST-SERVER-111111-30/05/2020 20:00:53] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:00:53] Parse Request Message password=[45cb41b32dcfb917ccd8614f1536d6da]
+[REST-SERVER-111111-30/05/2020 20:00:53] Parse Request Message AndroidID=[545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:00:53] Getting Login User RowID=[1] UserID=[rck177] NoRek=[1780000001] isLogin=[0] AndroidID=[7a34fac07256781a] Invalid Login=[2] Password=[45cb41b32dcfb917ccd8614f1536d6da] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:00:53] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:00:53 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 199
+
+]
+[REST-SERVER-111111-30/05/2020 20:00:53] Sending Response to Client Data=[199][c7
+{"MBANKRsp":{"termId":"Android   545d17d4699c869b","descr":"Device Id Tidak sama","mti":"0210","currCode":"360","pcode":"000000","stan":"483084","rCode":"55","rrn":"483084483084","gmt":"0530130052"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:00:53] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:01:12] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 202
+
+{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"948914","gmt":"0530130111","rrn":"948914948914","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message=[202][{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"948914","gmt":"0530130111","rrn":"948914948914","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message Pcode=[000000]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message STAN=[948914]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message GMT=[0530130111]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message RRN=[948914948914]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message TermID=[Android   545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:01:12] ***** Doing Login User *****
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message password=[45cb41b32dcfb917ccd8614f1536d6da]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message AndroidID=[545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:01:12] Getting Login User RowID=[1] UserID=[rck177] NoRek=[1780000001] isLogin=[0] AndroidID=[545d17d4699c869b] Invalid Login=[2] Password=[45cb41b32dcfb917ccd8614f1536d6da] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:01:12] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:01:12 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 214
+
+]
+[REST-SERVER-111111-30/05/2020 20:01:12] Sending Response to Client Data=[214][d6
+{"MBANKRsp":{"termId":"Android   545d17d4699c869b","descr":"Login Berhasil","mti":"0210","currCode":"360","pcode":"000000","accNo":"1780000001","stan":"948914","rCode":"00","rrn":"948914948914","gmt":"0530130111"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:01:12] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:01:12] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 140
+
+{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"948914","gmt":"0530130111","rrn":"948914948914","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message=[140][{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"948914","gmt":"0530130111","rrn":"948914948914","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message Pcode=[300000]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message STAN=[948914]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message GMT=[0530130111]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message RRN=[948914948914]
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message TermID=[Android]
+[REST-SERVER-111111-30/05/2020 20:01:12] ***** Doing Balance Inquiry *****
+[REST-SERVER-111111-30/05/2020 20:01:12] Parse Request Message AccNo=[1780000001]
+[REST-SERVER-111111-30/05/2020 20:01:12] Getting Data Rekening RowID=[1] AccNo=[1780000001] CIF=[170719950001] Name=[RICKY TRI UTOMO] Saldo Min=[50000] Saldo Awal=[1000000] Saldo Tersedia=[1500000] KodeCab=[178] Jenis Rekening=[Tabungan Plus] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:01:12] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:01:12 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 394
+
+]
+[REST-SERVER-111111-30/05/2020 20:01:12] Sending Response to Client Data=[394][18a
+{"MBANKRsp":{"termId":"Android","descr":"Transaksi Berhasil","mti":"0210","currCode":"360","pcode":"300000","accNo":"1780000001","stan":"948914","detailData":{"availableSaldo":"1500000","openSaldo":"1000000","jenisRekening":"Tabungan Plus","name":"RICKY TRI UTOMO","kodeCabang":"178","saldoMin":"50000","noCif":"170719950001","status":"0"},"rCode":"00","rrn":"948914948914","gmt":"0530130111"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:01:13] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:05:09] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 202
+
+{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"339505","gmt":"0530130509","rrn":"339505339505","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message=[202][{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"339505","gmt":"0530130509","rrn":"339505339505","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message Pcode=[000000]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message STAN=[339505]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message GMT=[0530130509]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message RRN=[339505339505]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message TermID=[Android   545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:05:10] ***** Doing Login User *****
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message password=[45cb41b32dcfb917ccd8614f1536d6da]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message AndroidID=[545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:05:10] Getting Login User RowID=[1] UserID=[rck177] NoRek=[1780000001] isLogin=[0] AndroidID=[545d17d4699c869b] Invalid Login=[0] Password=[45cb41b32dcfb917ccd8614f1536d6da] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:05:10] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:05:10 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 214
+
+]
+[REST-SERVER-111111-30/05/2020 20:05:10] Sending Response to Client Data=[214][d6
+{"MBANKRsp":{"termId":"Android   545d17d4699c869b","descr":"Login Berhasil","mti":"0210","currCode":"360","pcode":"000000","accNo":"1780000001","stan":"339505","rCode":"00","rrn":"339505339505","gmt":"0530130509"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:05:10] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:05:10] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 140
+
+{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"339505","gmt":"0530130509","rrn":"339505339505","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message=[140][{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"339505","gmt":"0530130509","rrn":"339505339505","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message Pcode=[300000]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message STAN=[339505]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message GMT=[0530130509]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message RRN=[339505339505]
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message TermID=[Android]
+[REST-SERVER-111111-30/05/2020 20:05:10] ***** Doing Balance Inquiry *****
+[REST-SERVER-111111-30/05/2020 20:05:10] Parse Request Message AccNo=[1780000001]
+[REST-SERVER-111111-30/05/2020 20:05:10] Getting Data Rekening RowID=[1] AccNo=[1780000001] CIF=[170719950001] Name=[RICKY TRI UTOMO] Saldo Min=[50000] Saldo Awal=[1000000] Saldo Tersedia=[1500000] KodeCab=[178] Jenis Rekening=[Tabungan Plus] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:05:10] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:05:10 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 394
+
+]
+[REST-SERVER-111111-30/05/2020 20:05:10] Sending Response to Client Data=[394][18a
+{"MBANKRsp":{"termId":"Android","descr":"Transaksi Berhasil","mti":"0210","currCode":"360","pcode":"300000","accNo":"1780000001","stan":"339505","detailData":{"availableSaldo":"1500000","openSaldo":"1000000","jenisRekening":"Tabungan Plus","name":"RICKY TRI UTOMO","kodeCabang":"178","saldoMin":"50000","noCif":"170719950001","status":"0"},"rCode":"00","rrn":"339505339505","gmt":"0530130509"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:05:10] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:06:08] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 202
+
+{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"163804","gmt":"0530130607","rrn":"163804163804","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message=[202][{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"163804","gmt":"0530130607","rrn":"163804163804","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message Pcode=[000000]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message STAN=[163804]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message GMT=[0530130607]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message RRN=[163804163804]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message TermID=[Android   545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:06:08] ***** Doing Login User *****
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message password=[45cb41b32dcfb917ccd8614f1536d6da]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message AndroidID=[545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:06:08] Getting Login User RowID=[1] UserID=[rck177] NoRek=[1780000001] isLogin=[0] AndroidID=[545d17d4699c869b] Invalid Login=[0] Password=[45cb41b32dcfb917ccd8614f1536d6da] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:06:08] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:06:08 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 214
+
+]
+[REST-SERVER-111111-30/05/2020 20:06:08] Sending Response to Client Data=[214][d6
+{"MBANKRsp":{"termId":"Android   545d17d4699c869b","descr":"Login Berhasil","mti":"0210","currCode":"360","pcode":"000000","accNo":"1780000001","stan":"163804","rCode":"00","rrn":"163804163804","gmt":"0530130607"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:06:08] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:06:08] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 140
+
+{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"163804","gmt":"0530130607","rrn":"163804163804","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message=[140][{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"163804","gmt":"0530130607","rrn":"163804163804","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message Pcode=[300000]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message STAN=[163804]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message GMT=[0530130607]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message RRN=[163804163804]
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message TermID=[Android]
+[REST-SERVER-111111-30/05/2020 20:06:08] ***** Doing Balance Inquiry *****
+[REST-SERVER-111111-30/05/2020 20:06:08] Parse Request Message AccNo=[1780000001]
+[REST-SERVER-111111-30/05/2020 20:06:08] Getting Data Rekening RowID=[1] AccNo=[1780000001] CIF=[170719950001] Name=[RICKY TRI UTOMO] Saldo Min=[50000] Saldo Awal=[1000000] Saldo Tersedia=[1500000] KodeCab=[178] Jenis Rekening=[Tabungan Plus] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:06:08] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:06:08 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 394
+
+]
+[REST-SERVER-111111-30/05/2020 20:06:08] Sending Response to Client Data=[394][18a
+{"MBANKRsp":{"termId":"Android","descr":"Transaksi Berhasil","mti":"0210","currCode":"360","pcode":"300000","accNo":"1780000001","stan":"163804","detailData":{"availableSaldo":"1500000","openSaldo":"1000000","jenisRekening":"Tabungan Plus","name":"RICKY TRI UTOMO","kodeCabang":"178","saldoMin":"50000","noCif":"170719950001","status":"0"},"rCode":"00","rrn":"163804163804","gmt":"0530130607"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:06:08] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:07:06] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 140
+
+{"MBANKReq":{"mti":"0200","pcode":"000001","stan":"506073","gmt":"0530130705","rrn":"506073506073","termId":"Android   ","userId":"rck177"}}]
+[REST-SERVER-111111-30/05/2020 20:07:06] Parse Request Message=[140][{"MBANKReq":{"mti":"0200","pcode":"000001","stan":"506073","gmt":"0530130705","rrn":"506073506073","termId":"Android   ","userId":"rck177"}}]
+[REST-SERVER-111111-30/05/2020 20:07:06] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:07:06] Parse Request Message Pcode=[000001]
+[REST-SERVER-111111-30/05/2020 20:07:06] Parse Request Message STAN=[506073]
+[REST-SERVER-111111-30/05/2020 20:07:06] Parse Request Message GMT=[0530130705]
+[REST-SERVER-111111-30/05/2020 20:07:06] Parse Request Message RRN=[506073506073]
+[REST-SERVER-111111-30/05/2020 20:07:06] Parse Request Message TermID=[Android   ]
+[REST-SERVER-111111-30/05/2020 20:07:06] ***** Doing Logout User *****
+[REST-SERVER-111111-30/05/2020 20:07:06] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:07:06] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:07:06 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 178
+
+]
+[REST-SERVER-111111-30/05/2020 20:07:06] Sending Response to Client Data=[178][b2
+{"MBANKRsp":{"termId":"Android   ","descr":"Logout Berhasil","mti":"0210","currCode":"360","pcode":"000001","stan":"506073","rCode":"00","rrn":"506073506073","gmt":"0530130705"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:07:06] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:09:15] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 202
+
+{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"097453","gmt":"0530130914","rrn":"097453097453","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:09:15] Parse Request Message=[202][{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"097453","gmt":"0530130914","rrn":"097453097453","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:09:15] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:09:15] Parse Request Message Pcode=[000000]
+[REST-SERVER-111111-30/05/2020 20:09:15] Parse Request Message STAN=[097453]
+[REST-SERVER-111111-30/05/2020 20:09:15] Parse Request Message GMT=[0530130914]
+[REST-SERVER-111111-30/05/2020 20:09:15] Parse Request Message RRN=[097453097453]
+[REST-SERVER-111111-30/05/2020 20:09:15] Parse Request Message TermID=[Android   545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:09:15] ***** Doing Login User *****
+[REST-SERVER-111111-30/05/2020 20:09:15] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:09:15] Parse Request Message password=[45cb41b32dcfb917ccd8614f1536d6da]
+[REST-SERVER-111111-30/05/2020 20:09:15] Parse Request Message AndroidID=[545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:09:15] Getting Login User RowID=[1] UserID=[rck177] NoRek=[1780000001] isLogin=[0] AndroidID=[545d17d4699c869b] Invalid Login=[0] Password=[45cb41b32dcfb917ccd8614f1536d6da] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:09:15] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:09:15 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 214
+
+]
+[REST-SERVER-111111-30/05/2020 20:09:15] Sending Response to Client Data=[214][d6
+{"MBANKRsp":{"termId":"Android   545d17d4699c869b","descr":"Login Berhasil","mti":"0210","currCode":"360","pcode":"000000","accNo":"1780000001","stan":"097453","rCode":"00","rrn":"097453097453","gmt":"0530130914"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:09:15] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:09:15] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 140
+
+{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"097453","gmt":"0530130915","rrn":"097453097453","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:09:16] Parse Request Message=[140][{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"097453","gmt":"0530130915","rrn":"097453097453","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:09:16] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:09:16] Parse Request Message Pcode=[300000]
+[REST-SERVER-111111-30/05/2020 20:09:16] Parse Request Message STAN=[097453]
+[REST-SERVER-111111-30/05/2020 20:09:16] Parse Request Message GMT=[0530130915]
+[REST-SERVER-111111-30/05/2020 20:09:16] Parse Request Message RRN=[097453097453]
+[REST-SERVER-111111-30/05/2020 20:09:16] Parse Request Message TermID=[Android]
+[REST-SERVER-111111-30/05/2020 20:09:16] ***** Doing Balance Inquiry *****
+[REST-SERVER-111111-30/05/2020 20:09:16] Parse Request Message AccNo=[1780000001]
+[REST-SERVER-111111-30/05/2020 20:09:16] Getting Data Rekening RowID=[1] AccNo=[1780000001] CIF=[170719950001] Name=[RICKY TRI UTOMO] Saldo Min=[50000] Saldo Awal=[1000000] Saldo Tersedia=[1500000] KodeCab=[178] Jenis Rekening=[Tabungan Plus] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:09:16] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:09:16 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 394
+
+]
+[REST-SERVER-111111-30/05/2020 20:09:16] Sending Response to Client Data=[394][18a
+{"MBANKRsp":{"termId":"Android","descr":"Transaksi Berhasil","mti":"0210","currCode":"360","pcode":"300000","accNo":"1780000001","stan":"097453","detailData":{"availableSaldo":"1500000","openSaldo":"1000000","jenisRekening":"Tabungan Plus","name":"RICKY TRI UTOMO","kodeCabang":"178","saldoMin":"50000","noCif":"170719950001","status":"0"},"rCode":"00","rrn":"097453097453","gmt":"0530130915"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:09:16] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:14:33] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 202
+
+{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"084561","gmt":"0530131432","rrn":"084561084561","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:14:33] Parse Request Message=[202][{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"084561","gmt":"0530131432","rrn":"084561084561","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:14:33] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:14:33] Parse Request Message Pcode=[000000]
+[REST-SERVER-111111-30/05/2020 20:14:33] Parse Request Message STAN=[084561]
+[REST-SERVER-111111-30/05/2020 20:14:33] Parse Request Message GMT=[0530131432]
+[REST-SERVER-111111-30/05/2020 20:14:33] Parse Request Message RRN=[084561084561]
+[REST-SERVER-111111-30/05/2020 20:14:33] Parse Request Message TermID=[Android   545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:14:33] ***** Doing Login User *****
+[REST-SERVER-111111-30/05/2020 20:14:33] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:14:34] Parse Request Message password=[45cb41b32dcfb917ccd8614f1536d6da]
+[REST-SERVER-111111-30/05/2020 20:14:34] Parse Request Message AndroidID=[545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:14:34] Getting Login User RowID=[1] UserID=[rck177] NoRek=[1780000001] isLogin=[0] AndroidID=[545d17d4699c869b] Invalid Login=[0] Password=[45cb41b32dcfb917ccd8614f1536d6da] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:14:34] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:14:34 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 214
+
+]
+[REST-SERVER-111111-30/05/2020 20:14:34] Sending Response to Client Data=[214][d6
+{"MBANKRsp":{"termId":"Android   545d17d4699c869b","descr":"Login Berhasil","mti":"0210","currCode":"360","pcode":"000000","accNo":"1780000001","stan":"084561","rCode":"00","rrn":"084561084561","gmt":"0530131432"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:14:34] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:14:34] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 140
+
+{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"084561","gmt":"0530131433","rrn":"084561084561","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:14:34] Parse Request Message=[140][{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"084561","gmt":"0530131433","rrn":"084561084561","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:14:34] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:14:34] Parse Request Message Pcode=[300000]
+[REST-SERVER-111111-30/05/2020 20:14:34] Parse Request Message STAN=[084561]
+[REST-SERVER-111111-30/05/2020 20:14:34] Parse Request Message GMT=[0530131433]
+[REST-SERVER-111111-30/05/2020 20:14:34] Parse Request Message RRN=[084561084561]
+[REST-SERVER-111111-30/05/2020 20:14:34] Parse Request Message TermID=[Android]
+[REST-SERVER-111111-30/05/2020 20:14:34] ***** Doing Balance Inquiry *****
+[REST-SERVER-111111-30/05/2020 20:14:34] Parse Request Message AccNo=[1780000001]
+[REST-SERVER-111111-30/05/2020 20:14:34] Getting Data Rekening RowID=[1] AccNo=[1780000001] CIF=[170719950001] Name=[RICKY TRI UTOMO] Saldo Min=[50000] Saldo Awal=[1000000] Saldo Tersedia=[1500000] KodeCab=[178] Jenis Rekening=[Tabungan Plus] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:14:34] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:14:34 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 394
+
+]
+[REST-SERVER-111111-30/05/2020 20:14:34] Sending Response to Client Data=[394][18a
+{"MBANKRsp":{"termId":"Android","descr":"Transaksi Berhasil","mti":"0210","currCode":"360","pcode":"300000","accNo":"1780000001","stan":"084561","detailData":{"availableSaldo":"1500000","openSaldo":"1000000","jenisRekening":"Tabungan Plus","name":"RICKY TRI UTOMO","kodeCabang":"178","saldoMin":"50000","noCif":"170719950001","status":"0"},"rCode":"00","rrn":"084561084561","gmt":"0530131433"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:14:34] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:18:07] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 202
+
+{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"335160","gmt":"0530131806","rrn":"335160335160","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message=[202][{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"335160","gmt":"0530131806","rrn":"335160335160","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message Pcode=[000000]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message STAN=[335160]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message GMT=[0530131806]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message RRN=[335160335160]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message TermID=[Android   545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:18:07] ***** Doing Login User *****
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message password=[45cb41b32dcfb917ccd8614f1536d6da]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message AndroidID=[545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:18:07] Getting Login User RowID=[1] UserID=[rck177] NoRek=[1780000001] isLogin=[0] AndroidID=[545d17d4699c869b] Invalid Login=[0] Password=[45cb41b32dcfb917ccd8614f1536d6da] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:18:07] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:18:07 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 214
+
+]
+[REST-SERVER-111111-30/05/2020 20:18:07] Sending Response to Client Data=[214][d6
+{"MBANKRsp":{"termId":"Android   545d17d4699c869b","descr":"Login Berhasil","mti":"0210","currCode":"360","pcode":"000000","accNo":"1780000001","stan":"335160","rCode":"00","rrn":"335160335160","gmt":"0530131806"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:18:07] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:18:07] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 140
+
+{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"335160","gmt":"0530131806","rrn":"335160335160","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message=[140][{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"335160","gmt":"0530131806","rrn":"335160335160","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:18:07] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:18:08] Parse Request Message Pcode=[300000]
+[REST-SERVER-111111-30/05/2020 20:18:08] Parse Request Message STAN=[335160]
+[REST-SERVER-111111-30/05/2020 20:18:08] Parse Request Message GMT=[0530131806]
+[REST-SERVER-111111-30/05/2020 20:18:08] Parse Request Message RRN=[335160335160]
+[REST-SERVER-111111-30/05/2020 20:18:08] Parse Request Message TermID=[Android]
+[REST-SERVER-111111-30/05/2020 20:18:08] ***** Doing Balance Inquiry *****
+[REST-SERVER-111111-30/05/2020 20:18:08] Parse Request Message AccNo=[1780000001]
+[REST-SERVER-111111-30/05/2020 20:18:08] Getting Data Rekening RowID=[1] AccNo=[1780000001] CIF=[170719950001] Name=[RICKY TRI UTOMO] Saldo Min=[50000] Saldo Awal=[1000000] Saldo Tersedia=[1500000] KodeCab=[178] Jenis Rekening=[Tabungan Plus] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:18:08] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:18:08 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 394
+
+]
+[REST-SERVER-111111-30/05/2020 20:18:08] Sending Response to Client Data=[394][18a
+{"MBANKRsp":{"termId":"Android","descr":"Transaksi Berhasil","mti":"0210","currCode":"360","pcode":"300000","accNo":"1780000001","stan":"335160","detailData":{"availableSaldo":"1500000","openSaldo":"1000000","jenisRekening":"Tabungan Plus","name":"RICKY TRI UTOMO","kodeCabang":"178","saldoMin":"50000","noCif":"170719950001","status":"0"},"rCode":"00","rrn":"335160335160","gmt":"0530131806"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:18:08] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:22:18] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 202
+
+{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"785274","gmt":"0530132217","rrn":"785274785274","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:22:18] Parse Request Message=[202][{"MBANKReq":{"mti":"0200","pcode":"000000","stan":"785274","gmt":"0530132217","rrn":"785274785274","termId":"Android   545d17d4699c869b","userId":"rck177","password":"45cb41b32dcfb917ccd8614f1536d6da"}}]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message Pcode=[000000]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message STAN=[785274]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message GMT=[0530132217]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message RRN=[785274785274]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message TermID=[Android   545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:22:19] ***** Doing Login User *****
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message userId=[rck177]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message password=[45cb41b32dcfb917ccd8614f1536d6da]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message AndroidID=[545d17d4699c869b]
+[REST-SERVER-111111-30/05/2020 20:22:19] Getting Login User RowID=[1] UserID=[rck177] NoRek=[1780000001] isLogin=[0] AndroidID=[545d17d4699c869b] Invalid Login=[0] Password=[45cb41b32dcfb917ccd8614f1536d6da] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:22:19] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:22:19 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 214
+
+]
+[REST-SERVER-111111-30/05/2020 20:22:19] Sending Response to Client Data=[214][d6
+{"MBANKRsp":{"termId":"Android   545d17d4699c869b","descr":"Login Berhasil","mti":"0210","currCode":"360","pcode":"000000","accNo":"1780000001","stan":"785274","rCode":"00","rrn":"785274785274","gmt":"0530132217"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:22:19] Client Disconnect
+[REST-SERVER-111111-30/05/2020 20:22:19] Getting Incoming Client Message=[POST / HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Accept: application/json
+Cache-Control: no-cache
+Accept-Encoding: UTF-8
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.1.1; Google Nexus 5X Build/NMF26Q)
+Host: 192.168.0.8:5555
+Connection: Keep-Alive
+Content-Length: 140
+
+{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"785274","gmt":"0530132218","rrn":"785274785274","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message=[140][{"MBANKReq":{"mti":"0200","pcode":"300000","stan":"785274","gmt":"0530132218","rrn":"785274785274","termId":"Android","accNo":"1780000001"}}]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message MTI=[0200]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message Pcode=[300000]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message STAN=[785274]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message GMT=[0530132218]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message RRN=[785274785274]
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message TermID=[Android]
+[REST-SERVER-111111-30/05/2020 20:22:19] ***** Doing Balance Inquiry *****
+[REST-SERVER-111111-30/05/2020 20:22:19] Parse Request Message AccNo=[1780000001]
+[REST-SERVER-111111-30/05/2020 20:22:19] Getting Data Rekening RowID=[1] AccNo=[1780000001] CIF=[170719950001] Name=[RICKY TRI UTOMO] Saldo Min=[50000] Saldo Awal=[1000000] Saldo Tersedia=[1500000] KodeCab=[178] Jenis Rekening=[Tabungan Plus] Status=[0]
+[REST-SERVER-111111-30/05/2020 20:22:19] Sending Response to Client Header Data=[177][HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8;
+Date: Sat, 30 May 2020 13:22:19 GMT
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Length: 394
+
+]
+[REST-SERVER-111111-30/05/2020 20:22:20] Sending Response to Client Data=[394][18a
+{"MBANKRsp":{"termId":"Android","descr":"Transaksi Berhasil","mti":"0210","currCode":"360","pcode":"300000","accNo":"1780000001","stan":"785274","detailData":{"availableSaldo":"1500000","openSaldo":"1000000","jenisRekening":"Tabungan Plus","name":"RICKY TRI UTOMO","kodeCabang":"178","saldoMin":"50000","noCif":"170719950001","status":"0"},"rCode":"00","rrn":"785274785274","gmt":"0530132218"}}
+0
+
+]
+[REST-SERVER-111111-30/05/2020 20:22:20] Client Disconnect
